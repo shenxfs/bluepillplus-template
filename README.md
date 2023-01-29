@@ -12,3 +12,11 @@
 3. [st-link](https://github.com/stlink-org/stlink)
 ### GD32F10x标准固件库
 [GD32F10x Firmware Library](https://www.gd32mcu.com/download/down/document_id/180/path_type/1)
+
+## 使用模板
+把模板克隆到你的项目中：
+```
+git clone https://github.com/shenxfs/bluepillplus-template.git yuor_project
+cd your_project
+rm -fr .git
+```

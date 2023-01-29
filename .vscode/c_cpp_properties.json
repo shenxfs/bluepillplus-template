@@ -14,7 +14,7 @@
                 "GD32F10X_MD",
                 "USE_STDPERIPH_DRIVER"
             ],
-			"compilerPath": "${HOME}/stm32/arm-none-eabi/bin/arm-none-eabi-gcc",
+			"compilerPath": "/usr/local/bin/arm-none-eabi-gcc",
             "cStandard": "gnu17",
             "cppStandard": "gnu++14",
             "intelliSenseMode": "gcc-arm"
