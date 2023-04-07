@@ -4,7 +4,7 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${HOME}/GD32/GD32F10x_Firmware_Library_V2.2.3/Firmware/**"
+                "${GD32F10x_FWL_ROOT}/Firmware/**"
             ],
             "defines": [
                 "_DEBUG",

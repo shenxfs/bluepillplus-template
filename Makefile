@@ -12,8 +12,9 @@
 
 ######################################
 #GD32F10x Firmware Library ROOT Path
-GD32F10xFWL =$(HOME)/GD32/GD32F10x_Firmware_Library_V2.2.3
-
+ifeq ($(GD32F10x_FWL_ROOT), )
+GD32F10x_FWL_ROOT =$(HOME)/GD32/GD32F10x_Firmware_Library_V2.2.3
+endif
 ######################################
 # target
 ######################################
@@ -39,7 +40,7 @@ BUILD_DIR = build
 # source
 ######################################
 VPATH = \
-$(GD32F10xFWL)/Firmware/GD32F10x_standard_peripheral/Source:\
+$(GD32F10x_FWL_ROOT)/Firmware/GD32F10x_standard_peripheral/Source:\
 Src
 
 # C sources
@@ -127,9 +128,9 @@ AS_INCLUDES =
 # C includes
 C_INCLUDES =  \
 -IInc \
--I$(GD32F10xFWL)/Firmware/CMSIS \
--I$(GD32F10xFWL)/Firmware/CMSIS/GD/GD32F10x/Include \
--I$(GD32F10xFWL)/Firmware/GD32F10x_standard_peripheral/Include
+-I$(GD32F10x_FWL_ROOT)/Firmware/CMSIS \
+-I$(GD32F10x_FWL_ROOT)/Firmware/CMSIS/GD/GD32F10x/Include \
+-I$(GD32F10x_FWL_ROOT)/Firmware/GD32F10x_standard_peripheral/Include
 
 
 # compile gcc flags
